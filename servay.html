@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survay</title>
+    <style>
+   body{
+      background-color:  #85c0a5;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      align-items: center;
+   }
+   form{
+        border: 2px solod transparent;
+        border-radius: 20px;
+        background-color: rgb(87, 138, 138);
+
+        margin: 50px auto;
+        padding: 30px 20px;
+         box-shadow: 4px 4px blacks;
+        max-width: 500px;
+   }
+   .form-control{
+    text-align: left;
+    margin-bottom: 20px;
+   }
+   .form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+            text-align: left;
+			display: inline-block;
+
+		}
+        .form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+        	/* Styling Button */
+		button {
+			background-color: #19bae2;
+			border: 1px solid #777;
+			border-radius: 12px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 50%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+    <form action="" class="form">
+        <h1>This is an Servay form</h1>
+        <div class="form-control"><label for="name">Name</label> <br>
+            <input type=" text" name="name" placeholder="Enter your name" required>
+        </div>
+
+    <div class="form-control"> Phone number <br><input type="phone" name="phone" placeholder="Entr your mobile number" required>
+    </div>
+    <div class="form-control"><label for="email">Email</label> <br>
+    <input type="email" name="email" placeholder="enter your email" required>
+   </div>
+   <div class="form-control"><label for="age"> age</label> <br>
+<input type="age" name="age" placeholder="Enter your age" required>
+</div>
+<div class="form-control">
+    <label for="role" id="">Which option best describes you?</label> <br>
+    <select name="role" id="role">
+        <option value="student">Student</option>
+        <option value="intern">Intern</option>
+        <option value="professional">
+            Professional
+        </option>
+        <option value="other">Other</option>
+    </select>
+</div>
+    <div class="form-control"><label for="">Would you recommend GeeksforGeeks
+        to a friend?</label> <br>
+        <label for="recommed"><input type="radio" name="recommed"> Yes</label><br>
+        <label for="recommed"><input type="radio" name="recommed"> No</label><br>
+        <label for="recommed"><input type="radio" name="recommed"> Maybe</label>
+
+
+    </div>
+    <div class="form-control">
+        <label>Languages and Frameworks known
+            <small>(Check all that apply)</small>
+        </label> <br>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="checkbox"
+                name="inp">C</input></label> <br>
+        <label for="inp-2">
+            <input type="checkbox"
+                name="inp">C++</input></label> <br>
+        <label for="inp-3">
+            <input type="checkbox"
+                name="inp">C#</input></label> <br>
+        <label for="inp-4">
+            <input type="checkbox"
+                name="inp">Java</input></label> <br>
+        <label for="inp-5">
+            <input type="checkbox"
+                name="inp">Python</input></label> <br>
+        <label for="inp-6">
+            <input type="checkbox"
+                name="inp">JavaScript</input></label> <br>
+        <label for="inp-7">
+            <input type="checkbox"
+                name="inp">React</input></label> <br>
+        <label for="inp-7">
+            <input type="checkbox"
+                name="inp">Angular</input></label> <br>
+        <label for="inp-7">
+            <input type="checkbox"
+                name="inp">Django</input></label> <br>
+        <label for="inp-7">
+            <input type="checkbox"
+                name="inp">Spring</input></label> <br>
+    </div>  <br>
+    <div class="form-control">
+        <label for="comment">
+            Any comments or suggestions
+        </label> <br>
+
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+    </div>
+
+    <button type="submit" value="submit">
+        Submit
+    </button>
+
+   
+
+</form>
+</body>
+</html>
